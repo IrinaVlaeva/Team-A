@@ -1,28 +1,24 @@
 <?php include "header.php" ?>
 
-<form id="login" action="admin.php?action=login" method="post" style="width: 50%;">
-    <input type="hidden" name="login" value="true" />
-
-    <?php if ( isset( $results['errorMessage'] ) ) { ?>
+<form id='login' action='/templates/user.php?action=login' method='post' accept-charset='UTF-8' style="width: 50%;">
+    <fieldset >
+	<legend>Login</legend>
+	
+	<?php if ( isset( $results['errorMessage'] ) ) { ?>
 	<div class="errorMessage"><?php echo $results['errorMessage'] ?></div>
-    <?php } ?>
-
-    <ul>
-	<li>
-	    <label for="login">Login</label>
-	    <input type="text" name="login.login" id="login" placeholder="Login or e-mail" required autofocus maxlength="20" />
-	</li>
-	<li>
-	    <label for="password">Password</label>
-	    <input type="password" name="login.password" id="password" placeholder="Password" required maxlength="20" />
-	</li>
-    </ul>
-
-    <div class="buttons">
-	<input type="submit" name="login" value="Login" />
-    </div>
-
+	<?php } ?>
+	
+	<input type='hidden' name='submitted' id='submitted' value='1'/>
+	 
+	<label for='username' >User name:</label>
+	<input type='text' name='username' id='username'  maxlength="50" placeholder="User name" required autofocus maxlength="200"/>
+	 
+	<label for='password' >Password:</label>
+	<input type='password' name='password' id='password' maxlength="50" placeholder="Password" required maxlength="200"/>
+	 
+	<input type='submit' name='Submit' value='Submit'/>
+     
+    </fieldset>
 </form>
 
 <?php include "footer.php" ?>
-

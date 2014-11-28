@@ -1,8 +1,6 @@
       <div id="footer">
-        Widget News &copy; 2011. All rights reserved. <a href="/templates/admin.php">Site Admin</a>
+        All rights reserved. <a href="user.php">Site Admin</a>
       </div>
-
-    </div>
   </body>
 </html>
 

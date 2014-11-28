@@ -1,4 +1,4 @@
-<?php include "/templates/header.php"; ?>
+<?php include "header.php"; ?>
 
 <?php
 session_start();
@@ -13,13 +13,13 @@ if (!empty($new_username)) {
 }
 
 if ($action != "login" && $action != "logout" && $username == "") {
-    header("Location: /templates/login.php");
+    header("Location: login.php");
 }
 switch ($action) {
   case 'login':
     login($username, $password);
     echo "A" . $_SESSION['username'];
-    header("Location: /templates/user.php");
+    header("Location: user.php");
     break;
   case 'logout':
     logout();
@@ -45,7 +45,7 @@ function login($username, $password) {
 
 function logout() {
     unset($_SESSION['username']);
-    header("Location: /templates/login.php");
+    header("Location: login.php");
 }
 
 function listTests() {
@@ -54,4 +54,4 @@ function listTests() {
 
 ?>
 
-<?php include "/templates/footer.php"; ?>
+<?php include "footer.php"; ?>

@@ -1,4 +1,4 @@
-<?php include "templates/include/header.php" ?>
+<?php include "templates/header.php" ?>
 
       <div id="adminHeader">
         <h2>Widget News Admin</h2>
@@ -50,5 +50,5 @@
       <p><a href="admin.php?action=deleteTest&amp;testId=<?php echo $results['test']->id ?>" onclick="return confirm('Delete This Test?')">Delete This Test</a></p>
 <?php } ?>
 
-<?php include "templates/include/footer.php" ?>
+<?php include "templates/footer.php" ?>
 

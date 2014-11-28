@@ -1,4 +1,4 @@
-<?php include "templates/include/header.php" ?>
+<?php include "templates/header.php" ?>
 
       <div id="adminHeader">
         <h2>Widget News Admin</h2>
@@ -39,5 +39,5 @@
 
       <p><a href="admin.php?action=newTest">Add a New Test</a></p>
 
-<?php include "templates/include/footer.php" ?>
+<?php include "templates/footer.php" ?>
 

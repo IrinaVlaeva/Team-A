@@ -1,11 +1,12 @@
 <?php
+
 ini_set("display_errors", true);
 date_default_timezone_set("Europe/Kiev");
 
 define("DB_DSN", "mysql:host=localhost;dbname=hedgehog");
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", "1");
-define("CLASS_PATH", "classes");
+define("CLASS_PATH", "code/classes");
 define("TEMPLATE_PATH", "templates");
 define("HOMEPAGE_NUM_ARTICLES", 5);
 define("ADMIN_USERNAME", "admin");

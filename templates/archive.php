@@ -21,5 +21,5 @@
 
       <p><a href="./">Return to Homepage</a></p>
 
-<?php include "templates/include/footer.php" ?>
+<?php include "templates/footer.php" ?>
 

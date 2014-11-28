@@ -1,5 +1,3 @@
-<?php include "header.php"; ?>
-
 <?php
 session_start();
 //require("/code/config.php"); TODO: Fix config.php
@@ -18,7 +16,6 @@ if ($action != "login" && $action != "logout" && $username == "") {
 switch ($action) {
   case 'login':
     login($username, $password);
-    echo "A" . $_SESSION['username'];
     header("Location: user.php");
     break;
   case 'logout':
@@ -49,6 +46,7 @@ function logout() {
 }
 
 function listTests() {
+    include "header.php";
     echo "You've logged as " . $_SESSION['username'];
 }
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-//require("/code/config.php"); TODO: Fix config.php
+require("../code/config.php");
 $action = isset($_GET['action']) ? $_GET['action'] : "";
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
 $new_username = isset($_POST['username']) ? $_POST['username'] : "";

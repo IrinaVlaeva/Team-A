@@ -48,8 +48,7 @@ function logout() {
 function listTests() {
     include "header.php";
     echo "You've logged as " . $_SESSION['username'];
+    include "footer.php";
 }
 
 ?>
-
-<?php include "footer.php"; ?>

@@ -1,5 +1,5 @@
       <div id="footer">
-        All rights reserved. <a href="user.php">Site Admin</a>
+        All rights reserved.
       </div>
   </body>
 </html>

@@ -1,14 +1,16 @@
 /* Стили для body and внешнего контейнера */
-
 body {
-  margin: 0;
+  max-width: 1200px;
+  margin: auto;
   color: #333;
   background-color: #00a0b0;
+  border: 3px #ffffff;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   line-height: 1.5em;
+  
 }
 
-#container {
+/*#container {
   width: 960px;
   background: #fff;
   margin: 20px auto;
@@ -16,27 +18,174 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}*/
+
+
+/* Хидер и футер и пару других настроек */
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0 none;
 }
 
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+} 
 
-/* Логотип и нижний колонтитул */
+@font-face
+{
+	font-family: florencesans;
+	src: url(fonts/florencesans/Florsn01.ttf);
+}
 
+header
+{	background-color: #ffffff;
+	height: 200px;
+	padding: 0 10.30%;
+	border-bottom: 1px solid #00a0b0;
+}
+
+.left
+{
+	float: left;
+}
+
+#logo
+{
+	display: block;
+	margin: 30px 0 0 0;
+	width: 113px;
+	height: 113px;
+	background: url('/images/qlogo.png') no-repeat scroll 0% 0% transparent;
+}
+/*
 #logo {
   display: block;
-  width: 300px;
+  width: 113px;
   padding: 0 660px 20px 0;
   border: none;
   border-bottom: 1px solid #00a0b0;
   margin-bottom: 40px;
+}*/
+
+.right
+{
+	float: right;
+		
+		}
+
+#top_nav
+{
+	height: 5.19em;
 }
+
+#top_nav ul
+{
+	list-style: outside none none;
+	margin: 5.88em 0 0 0;
+}
+
+#top_nav li
+{
+	display: inline;
+	padding: 0 15px;
+	height: 2em;
+	background-color: #0ebfdd;
+	-moz-border-radius: 6em;
+	-webkit-border-radius: 6em;
+	border-radius: 6em;
+	margin: 1.25em 0 1.25em 15px;
+	padding: 0.75em 2.31em 0 2.31em;
+	text-align: center;
+}
+
+#top_nav li a
+{
+	text-decoration: none;
+	height: 6em;
+	background-color: #0ebfdd;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+	margin-top: 5px;
+	padding: 0.75em 2.31em 0 2.31em;
+	text-align: center;
+	
+}
+
 
 #footer {
   border-top: 1px solid #00a0b0;
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 20px 0 0 0;
   font-size: .8em;
 }
 
+footer
+{
+	height: 7.63em;
+	background-color: #82868f;
+	color: white;
+	padding: 0 17.30%;
+}
+
+footer ul
+{
+	list-style: outside none none;
+}
+
+footer li
+{
+	display: inline;
+}
+
+footer li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#bottom_nav
+{
+	height: 5em;
+	min-height: 50px;
+}
+
+#menu
+{
+	margin: 2em 0 0 0;
+}
+
+#menu .middle
+{
+	padding: 0 2.5em;
+}
+
+#social
+{
+	margin: 1.25em 0 0 0;
+}
+
+#social .middle
+{
+	padding: 0 0.37em;
+}
+
+#bottom_nav a img
+{
+	border: none;
+}
+
+footer hr
+{
+	clear: both;
+	border: none;
+	background-color: white;
+	color: white;
+	height: 1px;
+}
+/* Конец моего вмешательства TashaKo*/
 
 /* Заголвки */
 

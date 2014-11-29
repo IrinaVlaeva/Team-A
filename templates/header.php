@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>QuizZ</title>
-    <h2>This is QuizZ site!</h2>
-    <link rel="stylesheet" type="text/css" href="../style/style.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE html/>
+<html>
+<head>
+	<link rel='stylesheet' href="/style/style.css">
+	<title><?php echo htmlspecialchars( $results['pageTitle'] )?></title>
+	<meta charset="UTF-8">
+	<!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-  </head>
-  <body>
+</head>
+<body>
+	<header>
+		<div class="left">
+			<span id="logo"></span>
+		</div>
+		<div class="right">		
+			<div class="left" id="top_nav">
+				<ul>
+					<li>
+						<a href="">SIGN IN</a>
+					</li>
+					<li>
+						<a href="">LOG IN</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="middle">
+ 

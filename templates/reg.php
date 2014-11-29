@@ -1,7 +1,7 @@
 <?php include "header.php" ?>
 
     
-<form id="reg" action="" method="post" style="width: 50%;">
+<form id="reg" action="/code/save_user.php" method="post" style="width: 50%;">
 
     <ul>
 	<li>

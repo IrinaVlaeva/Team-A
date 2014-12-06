@@ -37,7 +37,7 @@ class User
 	$this->__construct( $params );
     }
     
-    public function userLogin()
+/*    public function userLogin()
     {
 	//success variable will be used to return if the login was successful or not.
 	$success = false;
@@ -74,7 +74,7 @@ class User
 	    return $success;
 	}
     }
-    
+*/    
     public function register()
     {
 	$correct = false;

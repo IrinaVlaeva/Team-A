@@ -13,6 +13,9 @@ define("ADMIN_USERNAME", "admin");
 define("ADMIN_PASSWORD", "admin");
 require ("../" . CLASS_PATH . "/Test.php");
 
+
+
+
 function handleException($exception)
 {
     echo "Sorry, a problem occurred. Please, try later.";

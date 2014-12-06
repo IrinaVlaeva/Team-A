@@ -1,3 +1,4 @@
+
 <!DOCTYPE html/>
 <html>
 <head>
@@ -18,10 +19,10 @@
 			<div class="left" id="top_nav">
 				<ul>
 					<li>
-						<a href="">SIGN IN</a>
+						<a href="reg.php">SIGN IN</a>
 					</li>
 					<li>
-						<a href="">LOG IN</a>
+						<a href="login.php">LOG IN</a>
 					</li>
 				</ul>
 			</div>

@@ -15,7 +15,7 @@ CREATE TABLE `user`
 (
     `user_id` INT NOT NULL AUTO_INCREMENT,
     `login` TEXT(50),
-    `e-mail` TEXT,
+    `email` TEXT,
     `password` TEXT,
     `user_type` TINYINT,
     `is_activated` INT,
@@ -28,6 +28,7 @@ CREATE TABLE `user_info`
     `user_id` INT,
     `name` TEXT,
     `country` TEXT,
+    `age` TEXT,
     `sex` INT
 );
 

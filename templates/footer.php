@@ -17,13 +17,13 @@
 			<div class="right" id="social">
 				<ul>
 					<li>
-						<a id="mail" href=""><img src="images/mail.png" alt="" no-repeat scroll 0% 0% transparent/></a>
+						<a id="mail" href=""><img src="../images/mail.png" alt="" no-repeat scroll 0% 0% transparent/></a>
 					</li>
 					<li class="middle">
-						<a id="facebook" href=""><img src="images/facebook.png" alt="" no-repeat scroll 0% 0% transparent/></a>
+						<a id="facebook" href=""><img src="../images/facebook.png" alt="" no-repeat scroll 0% 0% transparent/></a>
 					</li>
 					<li>
-						<a id="twitter" href=""><img src="images/twitter.png" alt="" no-repeat scroll 0% 0% transparent/></a>
+						<a id="twitter" href=""><img src="../images/twitter.png" alt="" no-repeat scroll 0% 0% transparent/></a>
 					</li>
 				</ul>
 			</div>

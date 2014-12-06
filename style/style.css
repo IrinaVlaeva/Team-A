@@ -310,7 +310,7 @@ input, select, textarea {
   width: 70%;
 }
 
-input, textarea, .date {
+input, select, textarea, .date {
   border: 2px solid #666;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;    
@@ -318,16 +318,16 @@ input, textarea, .date {
   background: #fff;
 }
 
-input {
+input, select {
   font-size: .9em;
 }
 
-select {
+/*select {
   padding: 0;
   margin-bottom: 2.5em;
   position: relative;
   top: .7em;
-}
+}*/
 
 textarea {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -351,7 +351,7 @@ form *:focus {
 
 /* Правильно заполненное поле имеет зеленый фон */
 
-input:valid, textarea:valid {
+input:valid, textarea:valid, select {
   background: #efe;
 }
 

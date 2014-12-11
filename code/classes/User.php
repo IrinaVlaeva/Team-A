@@ -82,6 +82,14 @@ class User
 	{
 	    $con = new PDO( DB_DSN, DB_USERNAME, DB_PASSWORD );
 	    $con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+	    $sql2 = "SELECT login FROM user WHERE login = :login";
+	    $stmt2 = $con->prepare( $sql2 );
+	    $stmt2->bindValue( "login", $this->login );
+	    $stmt2->execute();
+	    if ($stmt2->rowCount() > 0 )
+	    {
+		return "This login is already taken" <br/> <a href='..templates/reg.php'>Try again</a>";
+	    }
 	    $sql = "INSERT INTO user( login, password, email, is_activated, user_type ) VALUES( :login, :password, :email, :is_activated, :user_type )";
 	    $stmt = $con->prepare( $sql );
 	    $stmt->bindValue( "login", $this->login, PDO::PARAM_STR );
